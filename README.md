@@ -106,11 +106,13 @@ That’s it! The script will automatically initialize the slider on page load.
 
 ## ⚙️ Customization
 
-You can customize the slider with:
+You can customize the slider by changing the following CSS varibles on the HTML code above:
 
 - `--slider-position`: Set initial divider position (e.g. `50%`, `30%`)
-- CSS: Style the handle, overlay, borders, shadows, etc.
-- JavaScript (optional): Add interaction hooks or animations
+- `--border-radious`: Set the preferred border radious (e.g. `0`, `1rem`, `8px`)
+- `--controls-color`: Set the controls color. It expects a RGB value. (e.g. `255, 255,255` for white or `0, 0, 0` for black)
+
+Regarding images, as you can see from the HTML code above, we are using the `<picture>` tag. This allows you to set different images for mobile and desktop, or serve the same image at a smaller size on mobile to improve loading speed. However, if you prefer, you can simply use a standard `<img src="">` tag and omit the `<picture>` wrapper.
 
 Example:
 
