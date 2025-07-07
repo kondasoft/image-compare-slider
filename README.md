@@ -121,6 +121,9 @@ Regarding images, as you can see from the HTML code above, we are using the `<pi
 [👉 View Live Demo](https://kondasoft.github.io/image-compare-slider/)
 
 
+## 📜 Changelog
+See the [CHANGELOG](./CHANGELOG.md) file for all notable changes and release history.
+
 
 ## 📄 License
 
