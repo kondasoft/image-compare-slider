@@ -114,13 +114,6 @@ You can customize the slider by changing the following CSS varibles on the HTML 
 
 Regarding images, as you can see from the HTML code above, we are using the `<picture>` tag. This allows you to set different images for mobile and desktop, or serve the same image at a smaller size on mobile to improve loading speed. However, if you prefer, you can simply use a standard `<img src="">` tag and omit the `<picture>` wrapper.
 
-Example:
-
-```css
-.ks-image-compare {
-  --slider-position: 40%;
-}
-```
 
 
 ## 🧪 Demo
