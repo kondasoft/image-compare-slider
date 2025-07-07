@@ -42,7 +42,7 @@ Or [download the latest release](https://github.com/kondasoft/image-compare-slid
   class="ks-image-compare"
   style="
     --slider-position: 50%;
-    --border-radius: 8px;
+    --border-radius: 6px;
     --controls-color: 255, 255, 255
   ">
   <div class="ks-image-compare-before">
