@@ -12,6 +12,7 @@ A lightweight, no-dependency image comparison slider built with vanilla HTML, CS
 - 🔧 Easy to customize and integrate  
 - 📱 Responsive and mobile-friendly  
 - ⚡️ Smooth performance  
+- ♿ Fully accessible (keyboard and screen reader friendly)</span>
 
 
 ## 📦 Installation
