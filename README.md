@@ -72,8 +72,8 @@ Or [download the latest release](https://github.com/kondasoft/image-compare-slid
       <img
         src="img-after.jpg"
         alt=""
-        width="{{ img_width }}"
-        height="{{ img_height }}"
+        width="1200"
+        height="675"
         loading="lazy"
       >
     </picture>
