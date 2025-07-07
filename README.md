@@ -2,9 +2,8 @@
 
 A lightweight, no-dependency image comparison slider built with vanilla HTML, CSS, and JavaScript. Easily compare two images with a draggable slider—perfect for before/after effects.
 
-![Demo](https://kondasoft.github.io/image-compare-slider/)
+[Demo](https://kondasoft.github.io/image-compare-slider/)
 
----
 
 ## 🚀 Features
 
@@ -14,7 +13,6 @@ A lightweight, no-dependency image comparison slider built with vanilla HTML, CS
 - 📱 Responsive and mobile-friendly  
 - ⚡️ Smooth performance  
 
----
 
 ## 📦 Installation
 
@@ -34,7 +32,7 @@ You can include the slider directly via CDN using [jsDelivr](https://www.jsdeliv
 
 Or [download the latest release](https://github.com/kondasoft/image-compare-slider/releases) and include them locally in your project.
 
----
+
 
 ## 🛠️ Usage
 
@@ -104,7 +102,6 @@ Or [download the latest release](https://github.com/kondasoft/image-compare-slid
 
 That’s it! The script will automatically initialize the slider on page load.
 
----
 
 ## ⚙️ Customization
 
@@ -122,28 +119,25 @@ Example:
 }
 ```
 
----
-
----
 
 ## 🧪 Demo
 
 [👉 View Live Demo](https://kondasoft.github.io/image-compare-slider/)
 
----
+
 
 ## 📄 License
 
 This project is licensed under the **MIT License** — free for personal and commercial use.
 
----
+
 
 ## 🙌 Contributing
 
 Pull requests, bug reports, and feature suggestions are welcome!\
 If you encounter a problem or want to improve the slider, feel free to open an [issue](https://github.com/kondasoft/image-compare-slider/issues) or submit a PR.
 
----
+
 
 ## 🔗 Credits
 
