@@ -4,13 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Compare Slider Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kondasoft/image-compare-slider@main/ks-image-compare-slider.css">
+  <script src="https://cdn.jsdelivr.net/gh/kondasoft/image-compare-slider@main/ks-image-compare-slider.js" defer></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 32px 16px;
+      background-color: #f0f0f0;
+      line-height: 1.5;
+    }
+    h1 {
+      text-align: center; 
+      color: #333;
+      margin: 0 0 8px;
+    }
+    p {
+      text-align: center;
+      color: #666;
+      margin: 0 0 24px;
+    }
+    .ks-image-compare {
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
   <h1>
     Image Compare Slider Demo
   </h1>
   <p>
-    This is a simple demo of an image compare slider. You can drag the slider to compare two images.
+    Image comparison slider to compare before and after images. Modern and fully accessible.
   </p>
   <ks-image-compare 
     class="ks-image-compare"
@@ -23,13 +49,13 @@
       <picture>
         <source
           media="(max-width: 599px)"
-          srcset=""
+          srcset="img-before.jpg"
         >
         <img
-          src=""
+          src="img-before.jpg"
           alt=""
-          width="{{ img_width }}"
-          height="{{ img_height }}"
+          width="1200"
+          height="675"
           loading="lazy"
         >
       </picture>
@@ -41,10 +67,10 @@
       <picture>
         <source
           media="(max-width: 599px)"
-          srcset=""
+          srcset="img-after.jpg"
         >
         <img
-          src=""
+          src="img-after.jpg"
           alt=""
           width="{{ img_width }}"
           height="{{ img_height }}"
@@ -72,6 +98,15 @@
         <path d="M9 18l6-6-6-6"></path>
       </svg>
     </div>
-  </ks-image-compareimage-compare>
+  </ks-image-compare>
+  <p style="margin: 24px 0;">
+    <a 
+      href="https://github.com/kondasoft/image-compare-slider" 
+      target="_blank" 
+      rel="noopener"
+      style="color: currentColor;">
+      Learn more on GitHub
+    </a>
+  </p>
 </body>
 </html>

@@ -83,15 +83,15 @@
   left: 5%;
 }
 
-.ks-image-compare:hover .image-compare-handle svg:first-child {
+.ks-image-compare:hover .ks-image-compare-handle svg:first-child {
   left: 0;
 }
 
-.ksimage-compare-handle svg:last-child {
+.ks-image-compare-handle svg:last-child {
   right: 5%;
 }
 
-.ks-image-compare:hover .image-compare-handle svg:last-child {
+.ks-image-compare:hover .ks-image-compare-handle svg:last-child {
   right: 0;
 }
 
@@ -102,9 +102,11 @@
   background-color: rgba(var(--controls-color), .25);
   border: none;
   backdrop-filter: blur(5px);
+  padding: .125rem .5rem;
+  border-radius: var(--border-radius);
 }
 
-.ks-image-compare-before .ks-image-compare-label {
+.ks-image-compare-before .ks-image-compare-label { 
   left: 1rem;
 }
 
