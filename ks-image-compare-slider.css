@@ -1,0 +1,113 @@
+/*
+  © 2025 KondaSoft
+  https://www.kondasoft.com
+*/
+
+.ks-image-compare {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  cursor: col-resize;
+}
+
+.ks-image-compare-before,
+.ks-image-compare-after {
+  display: flex;
+}
+
+.ks-image-compare picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ks-image-compare img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ks-image-compare-after {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: var(--slider-position, 50%);
+  width: 100%;
+  height: 100%;
+}
+
+.ks-image-compare-after img {
+  transform: translateX(calc(var(--slider-position, 50%) * -1));
+}
+
+.ks-image-compare-line {
+  position: absolute;
+  top: 0;
+  left: var(--slider-position, 50%);
+  width: 2px;
+  height: 100%;
+  background: rgba(var(--controls-color), 1);
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.ks-image-compare-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(var(--controls-color), .15);
+  border: 2px solid rgba(var(--controls-color), 1);
+  color: rgba(var(--controls-color), 1);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.ks-image-compare-handle:focus-visible {
+  outline: 2px solid rgba(var(--controls-color), .75);
+}
+
+.ks-image-compare-handle svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .2s ease-out;
+}
+
+.ks-image-compare-handle svg:first-child {
+  left: 5%;
+}
+
+.ks-image-compare:hover .image-compare-handle svg:first-child {
+  left: 0;
+}
+
+.ksimage-compare-handle svg:last-child {
+  right: 5%;
+}
+
+.ks-image-compare:hover .image-compare-handle svg:last-child {
+  right: 0;
+}
+
+.ks-image-compare-label {
+  position: absolute;
+  bottom: 1rem;
+  color: rgba(var(--controls-color), 1);
+  background-color: rgba(var(--controls-color), .25);
+  border: none;
+  backdrop-filter: blur(5px);
+}
+
+.ks-image-compare-before .ks-image-compare-label {
+  left: 1rem;
+}
+
+.ks-image-compare-after .ks-image-compare-label {
+  right: calc(1rem + var(--slider-position, 50%));
+}

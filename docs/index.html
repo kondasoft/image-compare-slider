@@ -1,1 +1,77 @@
-<h1>Teset</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Compare Slider Demo</title>
+</head>
+<body>
+  <h1>
+    Image Compare Slider Demo
+  </h1>
+  <p>
+    This is a simple demo of an image compare slider. You can drag the slider to compare two images.
+  </p>
+  <ks-image-compare 
+    class="ks-image-compare"
+    style="
+      --slider-position: 50%;
+      --border-radius: 8px;
+      --controls-color: 255, 255, 255
+    ">
+    <div class="ks-image-compare-before">
+      <picture>
+        <source
+          media="(max-width: 599px)"
+          srcset=""
+        >
+        <img
+          src=""
+          alt=""
+          width="{{ img_width }}"
+          height="{{ img_height }}"
+          loading="lazy"
+        >
+      </picture>
+      <span class="ks-image-compare-label">
+        Before
+      </span>
+    </div>
+    <div class="ks-image-compare-after">
+      <picture>
+        <source
+          media="(max-width: 599px)"
+          srcset=""
+        >
+        <img
+          src=""
+          alt=""
+          width="{{ img_width }}"
+          height="{{ img_height }}"
+          loading="lazy"
+        >
+      </picture>
+      <span class="ks-image-compare-label">
+        After
+      </span>
+    </div>
+    <div class="ks-image-compare-line">
+    </div>
+    <div 
+      class="ks-image-compare-handle" 
+      tabindex="0"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="50"
+      aria-label="Compare images"
+      role="slider">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 18l6-6-6-6"></path>
+      </svg>
+    </div>
+  </ks-image-compareimage-compare>
+</body>
+</html>
